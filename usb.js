@@ -151,6 +151,7 @@ function Interface(device, id){
 	this.altSetting = 0;
 	this.__refresh()
 }
+exports.Interface = Interface
 
 Interface.prototype.__refresh = function(){
 	this.descriptor = this.device.configDescriptor.interfaces[this.id][this.altSetting]
